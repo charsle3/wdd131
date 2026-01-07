@@ -1,0 +1,56 @@
+:root {
+    --primary-background: #616160;
+    --secondary-background: #adacaa
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: var(--primary-background);
+    height: 100px;
+    color: white;
+    position: relative;
+}
+
+header h1 {
+    padding: 10px;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: black;
+    align-items: center;
+    padding: 10px;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+#columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+main {
+    grid-column: span 3;
+    background-color: var(--secondary-background);
+    height: 500px;
+}
+
+footer {
+    background-color: var(--primary-background);
+    height: 100px;
+    color: white;
+    padding: 10px;
+}
