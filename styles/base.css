@@ -1,6 +1,7 @@
 :root {
     --primary-background: lightgrey;
     --secondary-background: grey;
+    --text-color-secondary: #E6E6E6;
 }
 
 * {
@@ -24,7 +25,7 @@ header span {
     display: block;
     font-weight: 400;
     font-size: 2.5rem;
-    color: #E6E6E6;
+    color: var(--text-color-secondary);
     margin: 20px;
 }
 
@@ -33,6 +34,7 @@ nav {
     margin: 0 auto;
     max-width: 800px;
     width: 100%;
+    border-radius: 5px;
 }
 
 nav ul {
@@ -56,6 +58,7 @@ nav a:hover {
     text-decoration: underline;
     background-color: #e0dede;
     color: #4f4f4f;
+    border-radius: 5px;
 }
 
 .active {
@@ -70,10 +73,12 @@ nav a:hover {
 }
 
 main {
+    margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: space-around;
+    grid-template-columns: 500px 1fr;
+    justify-content: center;
     text-align: center;
+    max-width: 800px;
 }
 
 main h1 {
@@ -82,12 +87,56 @@ main h1 {
 }
 
 main section {
+    margin: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.card {
+    text-align: center;
+}
+
+.card h2 {
+    background-color: var(--primary-background);
+    border-radius: 10px;
     padding: 1rem;
+}
+
+.card h3 {
+    margin: 0 auto;
+    max-width: fit-content;
+    text-decoration: underline;
+}
+
+.card p {
+    padding: 1rem;
+}
+
+.card ul {
+    text-align: left;
+    padding-left: 30px;
+    padding-top: 10px;
+}
+
+.card img {
+    width: 150px;
+    margin: 10px;
+    box-shadow: 0 0 5px;
+}
+
+#spokane-flag {
+    float: left;
+}
+
+#profile {
+    float: right;
 }
 
 footer {
     text-align: center;
     padding: 1rem;
+    background-color: var(--secondary-background);
+    color: var(--text-color-secondary);
 }
 
 footer p {
@@ -95,5 +144,5 @@ footer p {
 }
 
 #lastmodified {
-    color: rgba(0, 0, 0, 0.381);
+    color: yellow;
 }
