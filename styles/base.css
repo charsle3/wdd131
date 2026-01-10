@@ -118,6 +118,10 @@ main section {
     padding-top: 10px;
 }
 
+.card li {
+    padding: .5rem;
+}
+
 .card img {
     width: 150px;
     margin: 10px;
@@ -136,7 +140,7 @@ footer {
     text-align: center;
     padding: 1rem;
     background-color: var(--secondary-background);
-    color: var(--text-color-secondary);
+    color: white;
 }
 
 footer p {
