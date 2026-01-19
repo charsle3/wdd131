@@ -29,6 +29,7 @@ header span {
 
 nav {
     background-color: var(--primary-background);
+    color: black;
     margin: 0 auto;
     max-width: 800px;
     width: 100%;
