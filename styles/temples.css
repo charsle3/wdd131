@@ -16,13 +16,13 @@ body {
 header {
     align-items: center;
     background-color: var(--secondary-background);
+    color: var(--text-color-secondary);
 }
 
 header span {
     display: block;
     font-weight: 400;
     font-size: 2.5rem;
-    color: var(--text-color-secondary);
     text-align: center;
     padding: 1rem;
 }
