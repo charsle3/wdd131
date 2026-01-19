@@ -1,0 +1,29 @@
+@media screen and (min-width:600px) {
+    header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--secondary-background);
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+    }
+
+    #hamburger {
+        display: none;
+    }
+    
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    main h1 {
+    grid-column: span 3;
+}
+}

@@ -1,0 +1,129 @@
+:root {
+    --primary-background: lightgrey;
+    --secondary-background: rgb(94, 94, 94);
+    --text-color-secondary: #E6E6E6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: roboto, arial, sans-serif;
+}
+
+header {
+    align-items: center;
+    background-color: var(--secondary-background);
+}
+
+header span {
+    display: block;
+    font-weight: 400;
+    font-size: 2.5rem;
+    color: var(--text-color-secondary);
+    text-align: center;
+    padding: 1rem;
+}
+
+nav {
+    background-color: var(--primary-background);
+    margin: 0 auto;
+    max-width: 800px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+nav ul {
+    display: none;
+    list-style: none;
+}
+
+nav li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    text-decoration: underline;
+    background-color: #e0dede;
+    color: #4f4f4f;
+    border-radius: 5px;
+}
+
+#hamburger::before {
+    display: block;
+    content: "≡≡";
+    padding: 1.1rem;
+    text-decoration: none;
+}
+
+#hamburger.show::before {
+    content: "❌";
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.show {
+    display: block;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: space-around;
+}
+
+main h1 {
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+figure {
+    margin: 10px;
+    background-color: var(--primary-background);
+    padding: 1rem;
+    min-width: 150px;
+    border-radius: 10px;
+    border: 1px solid white;
+    color: black;
+}
+
+figure:hover {
+    text-decoration: underline;
+    background-color: rgb(240, 240, 240);
+    color: #4f4f4f;
+    border-radius: 10px;
+    border: 1px solid #4f4f4f;
+}
+
+figure img {
+    width: 100%;
+}
+
+figcaption {
+    text-align: center;
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--secondary-background);
+    color: white;
+}
+
+footer p {
+    padding: .5rem;
+}
+
+#lastmodified {
+    color: yellow;
+}
