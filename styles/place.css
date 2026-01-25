@@ -1,0 +1,80 @@
+:root {
+    --primary-background: lightgrey;
+    --secondary-background: rgb(94, 94, 94);
+    --text-color-secondary: #E6E6E6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: roboto, arial, sans-serif;
+}
+
+div {
+    margin: 2rem;
+    padding: 2rem;
+    background-color: var(--primary-background);
+}
+
+header h1 {
+    margin: 2rem;
+    padding: 2rem;
+    color: white;
+    background-color: var(--secondary-background);
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 500;
+}
+
+main h2 {
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+#weather-icon {
+    text-align: center;
+    font-size: 3rem;
+    grid-column: span 2;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: .5fr 1fr;
+    grid-column: span 2;
+}
+
+li {
+    list-style: none;
+}
+
+.left {
+    font-weight: bold;
+    text-align: right;
+}
+
+.hero {
+    background-color: var(--secondary-background);
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--secondary-background);
+    color: white;
+}
+
+footer p {
+    padding: .5rem;
+}
+
+#lastmodified {
+    color: yellow;
+}
