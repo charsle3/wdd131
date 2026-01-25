@@ -40,6 +40,11 @@ main h2 {
     grid-column: span 2;
 }
 
+#weather-icon img {
+    width: 40px;
+    height: auto;
+}
+
 ul {
     display: grid;
     grid-template-columns: .5fr 1fr;
