@@ -1,0 +1,59 @@
+:root {
+    --primary-background: lightgrey;
+    --secondary-background: rgb(94, 94, 94);
+    --text-color-secondary: #E6E6E6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0 auto;
+}
+
+main {
+    text-align: center;
+}
+
+section {
+    place-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    width: 400px;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-name: fade-in;
+    background-color: black;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--secondary-background);
+    color: white;
+}
+
+footer p {
+    padding: .5rem;
+}
+
+#lastmodified {
+    color: yellow;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    display: hidden;
+  }
+
+  100% {
+    opacity: 1;
+    display: show;
+  }
+}
