@@ -78,7 +78,7 @@ const temples = [
     dedicated: "1980, November, 17",
     area: 110000,
     imageUrl:
-    "https://www.churchofjesuschrist.org/imgs/02bc5fa239bfc78d3fdc3da6d851d95c65d054d3/full/640%2C/0/default"
+    "images/seattle-temple.webp"
   },
   {
     templeName: "Spokane Washington",
