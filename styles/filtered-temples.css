@@ -17,6 +17,8 @@ header {
     align-items: center;
     background-color: var(--secondary-background);
     color: var(--text-color-secondary);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 header span {
@@ -87,28 +89,29 @@ main h1 {
     padding: 1.5rem;
 }
 
-div {
+.card {
     margin-top: 1rem;
     text-align: center;
     background-color: var(--primary-background);
-    padding: 1rem;
+    padding: .8rem;
+    border: 1px solid rgb(207, 207, 207);
 }
 
-div h2 {
+.card h2 {
     padding: .2rem;
     font-size: large;
 }
 
-div p {
+.card p {
     font-size: smaller;
     padding: .2rem;
 }
 
-div p span {
+.card p span {
     color: purple;
 }
 
-div img {
+.card img {
     margin-top: .5rem;
     box-shadow: 0 0 10px black;
 }

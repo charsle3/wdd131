@@ -98,7 +98,7 @@ const temples = [
   }
 ];
 
-const main = document.querySelector('main');
+const main = document.querySelector('#templecards');
 
 const home = document.querySelector('#home');
 home.addEventListener('click', () => {
@@ -131,7 +131,7 @@ function populateCards(filteredTemples) {
 
 	for (const temple of filteredTemples) {
 		templeCards += `
-		<div>
+		<div class="card">
 			<h2>${temple.templeName}</h2>
 			<p><span>Location</span>: ${temple.location}</p>
 			<p><span>Dedicated</span>: ${temple.dedicated}</p>

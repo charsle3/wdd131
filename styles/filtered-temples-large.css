@@ -5,6 +5,7 @@
     justify-content: center;
     flex-direction: column;
     background-color: var(--secondary-background);
+    border-radius: 0;
     }
 
     nav ul {
@@ -19,7 +20,8 @@
         display: none;
     }
     
-    main {
+    main section {
+        display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: 1rem;
     }
