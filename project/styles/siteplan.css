@@ -1,0 +1,46 @@
+:root {
+    --primary-background-one: rgb(255, 255, 196);
+    --primary-background-two: rgb(255, 255, 110);
+    --secondary-background: yellow;
+    --heading-text-color: violet;
+    --header-footer-text: rgb(197, 0, 197);
+    --orfan: brown;
+    --calderian: purple;
+    --telemain: grey;
+    --feldoren: orange;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: roboto, arial, sans-serif;
+    background-image: linear-gradient(var(--primary-background-one), var(--primary-background-two));
+}
+
+h1 {
+    color: var(--heading-text-color);
+}
+
+h1, p, ul, div {
+    margin: 1rem;
+}
+
+ul {
+    padding: 1rem;
+}
+
+header, footer {
+    background-color: var(--secondary-background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header h1, footer h1 {
+    color: var(--header-footer-text)
+}
+
