@@ -6,7 +6,7 @@ let chaptersArray = getChapterList() || [];
 
 function displayList(item){
     let scripture = document.createElement('li');
-    let deleteButton = document.createElement('button')
+    let deleteButton = document.createElement('button');
 
     scripture.textContent = item;
     deleteButton.textContent = '❌';
