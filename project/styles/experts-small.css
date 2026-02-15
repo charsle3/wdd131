@@ -147,7 +147,7 @@ form fieldset {
 }
 
 form label, form textarea {
-    margin: 0 .3rem;
+    margin: .3rem .3rem;
 }
 
 form textarea {
@@ -156,13 +156,13 @@ form textarea {
 
 .changeType {
     display: grid;
-    grid-template-columns: 20px 1fr;
+    grid-template-columns: 30px 1fr;
     text-align: left;
     margin-bottom: .3rem;
 }
 
 form input[type="radio"] {
-    margin: .3rem;
+    margin: .6rem;
 }
 
 footer {
