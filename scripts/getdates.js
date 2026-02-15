@@ -1,5 +1,5 @@
 const currentyear = document.querySelector("#currentyear");
-const lastmodified = document.querySelector("#lastmodified")
+const lastmodified = document.querySelector("#lastmodified");
 
 const today = new Date();
 

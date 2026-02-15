@@ -1,0 +1,128 @@
+:root {
+    --primary-background: lightgrey;
+    --overlay-background: rgba(211, 211, 211, 0.377);
+    --secondary-background: rgb(94, 94, 94);
+    --text-color-secondary: #E6E6E6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: roboto, arial, sans-serif;
+}
+
+/*----------------Header + Username Dropdown-------------------*/
+
+header {
+    text-align: center;
+    background-color: var(--secondary-background);
+    color: var(--text-color-secondary);
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 1rem;
+    flex-direction: row;   
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: 800px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color-secondary);
+    padding-top: .3rem;
+}
+
+nav label {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+
+#userLogo {
+    padding-right: .3rem;
+}
+
+#userLogo img {
+    padding-top: .3rem;
+    width: 20px;
+}
+
+nav select {
+    background-color: var(--secondary-background);
+    appearance: none;
+    border: none;
+    color: var(--text-color-secondary);
+    padding: o;
+    font-size: medium;
+}
+
+/*---------------------Hero img + Character Cards-----------------------------*/
+.hero {
+    text-align: center;
+    position: relative;
+}
+
+.hero img {
+    margin: 0 auto;
+    width: 100%;
+    /* height: 500px; */
+}
+
+.hero h1 {
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
+    background-color: var(--overlay-background);
+    color: var(--text-color-secondary);
+    border-radius: 20px;
+    padding: 1rem;
+}
+
+.character-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.character-cards div {
+    margin: 1% 0;
+    padding: 1rem;
+    border: 1px solid black;
+    background-color: var(--primary-background);
+    text-align: center;
+}
+
+.character-cards img {
+    width: 100%;
+}
+
+.character-cards p {
+    padding: .5rem;
+}
+/*--------------------------------------------------*/
+
+/*--------------------------------------------------*/
+
+/*--------------------------------------------------*/
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--secondary-background);
+    color: var(--text-color-secondary);
+}
+
+footer p {
+    padding: .5rem;
+}
+
+#lastmodified {
+    color: yellow;
+}
