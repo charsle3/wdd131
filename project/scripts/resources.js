@@ -60,7 +60,7 @@ function getLogo(username){
     let telemainLogo = "<img src=\"images/telemain.svg\" alt=\"telemain logo\"></img>";
     let orfanLogo = "<img src=\"images/orfan.svg\" alt=\"orfan logo\"></img>";
     let calderianLogo = "<img src=\"images/calderian.svg\" alt=\"calderian logo\"></img>";
-    let feldorenLogo = "<img src=\"images/feldoren.svg\" alt=\"feldoren logo></img>";
+    let feldorenLogo = "<img src=\"images/feldoren.svg\" alt=\"feldoren logo\"></img>";
     let expertsLogo = "<img src=\"images/experts.svg\" alt=\"experts for hire logo\"></img>";
 
     if (username == 'telemain'){
