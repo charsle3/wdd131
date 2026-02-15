@@ -1,13 +1,30 @@
 :root {
+    /* Default / Telemain color scheme  */
     --primary-background: lightgrey;
     --overlay-background: rgba(211, 211, 211, 0.377);
     --secondary-background: rgb(94, 94, 94);
     --text-color-secondary: #E6E6E6;
+    /* Orfan Color Scheme 
+    --primary-background: tan;
+    --overlay-background: rgba(210, 180, 140, 0.426);
+    --secondary-background: saddlebrown;
+    --text-color-secondary: #E6E6E6; */
+    /* Calderian color scheme
+    --primary-background: rgb(252, 222, 252);
+    --overlay-background: rgba(252, 222, 252, 0.399);
+    --secondary-background: purple;
+    --text-color-secondary: #E6E6E6; */
+    /* Feldoren color scheme 
+    --primary-background: rgb(186, 229, 255);
+    --overlay-background: rgba(186, 229, 255, 0.456);
+    --secondary-background: navy;
+    --text-color-secondary: #E6E6E6; */
 }
 
 * {
     margin: 0;
     padding: 0;
+    max-width: 100%;
 }
 
 body {
@@ -30,7 +47,7 @@ nav {
     flex-direction: row;   
     justify-content: space-evenly;
     width: 100%;
-    max-width: 800px;
+    max-width: 250px;
 }
 
 nav a {
@@ -44,10 +61,14 @@ nav label {
     flex-direction: row;
     align-content: center;
     justify-content: center;
+    margin-top: .4rem;
 }
 
 #userLogo {
-    padding-right: .3rem;
+    padding: .1rem;
+    background-color: white;
+    border-radius: 20px;
+    margin-right: .4rem;
 }
 
 #userLogo img {
@@ -56,12 +77,20 @@ nav label {
 }
 
 nav select {
+    padding-left: .3rem;
     background-color: var(--secondary-background);
     appearance: none;
     border: none;
     color: var(--text-color-secondary);
-    padding: o;
     font-size: medium;
+}
+
+div {
+    margin: 1% 0;
+    padding: 1rem;
+    border: 1px solid black;
+    background-color: var(--primary-background);
+    text-align: center;
 }
 
 /*---------------------Hero img + Character Cards-----------------------------*/
@@ -91,14 +120,6 @@ nav select {
     grid-template-columns: 1fr;
 }
 
-.character-cards div {
-    margin: 1% 0;
-    padding: 1rem;
-    border: 1px solid black;
-    background-color: var(--primary-background);
-    text-align: center;
-}
-
 .character-cards img {
     width: 100%;
 }
@@ -106,11 +127,43 @@ nav select {
 .character-cards p {
     padding: .5rem;
 }
-/*--------------------------------------------------*/
+/*--------------------SessionInfo------------------------------*/
 
-/*--------------------------------------------------*/
+#sessionInfo {
+    text-align: left;
+}
+/*---------------------Resources session descriptions-----------------------------*/
 
-/*--------------------------------------------------*/
+#summary :first-child, #spacer {
+    padding-bottom: 1rem;
+}
+
+/*-----------------------Feedback Form---------------------------*/
+
+form fieldset {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: left;
+}
+
+form label, form textarea {
+    margin: 0 .3rem;
+}
+
+form textarea {
+    margin-bottom: .3rem;
+}
+
+.changeType {
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    text-align: left;
+    margin-bottom: .3rem;
+}
+
+form input[type="radio"] {
+    margin: .3rem;
+}
 
 footer {
     text-align: center;

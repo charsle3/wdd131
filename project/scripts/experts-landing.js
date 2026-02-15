@@ -39,6 +39,8 @@ function setUsername() {
             localStorage.setItem('username', JSON.stringify('feldoren'));
         }
 
+        setColors(JSON.parse(localStorage.getItem('username')));
+
         displayCharacterCards();
         
     });
@@ -80,6 +82,32 @@ function getLogo(username){
         else if (username == 'hanz'){
             return expertsLogo;
         }
+}
+
+function setColors(username){
+    const root = document.documentElement;
+
+    if (username == "orfan"){
+        root.style.setProperty('--primary-background', 'tan');
+        root.style.setProperty('--overlay-background', 'rgba(210, 180, 140, 0.426)');
+        root.style.setProperty('--secondary-background', 'saddlebrown');
+    }
+    else if (username == "telemain"){
+        root.style.setProperty('--primary-background', 'lightgrey');
+        root.style.setProperty('--overlay-background', 'rgba(211, 211, 211, 0.377)');
+        root.style.setProperty('--secondary-background', 'rgb(94, 94, 94)');
+    }
+    else if (username == "calderian"){
+        root.style.setProperty('--primary-background', 'rgb(252, 222, 252)');
+        root.style.setProperty('--overlay-background', 'rgba(252, 222, 252, 0.399)');
+        root.style.setProperty('--secondary-background', 'purple');
+    }
+    else if (username == "feldoren"){
+        root.style.setProperty('--primary-background', 'rgb(186, 229, 255)');
+        root.style.setProperty('--overlay-background', 'rgba(186, 229, 255, 0.456)');
+        root.style.setProperty('--secondary-background', 'navy');
+    }
+    
 }
 
 let characters = [
@@ -146,12 +174,10 @@ function displayCharacterCards() {
     characters.forEach(character => {
         let box = document.createElement("div");
         let image = document.createElement("img");
-        let level = document.createElement("p");
         let quote = document.createElement("p");
         let weapon = document.createElement("p");
         let name = document.createElement("p");
 
-        level.innerHTML = `<b>Level</b>: ${characterLevel}`;
         quote.innerHTML = `<i>"${character.quote}"</i>`;
         weapon.innerHTML = `<b>Preferred Weapon</b>: ${character.preferredWeapon}`;
         name.innerHTML = `<b>Name</b>: ${character.name}`;
@@ -163,17 +189,57 @@ function displayCharacterCards() {
         box.appendChild(image);
         box.appendChild(quote);
         box.appendChild(name);
-        box.appendChild(level);
         box.appendChild(weapon);
 
         cards.appendChild(box);
     });
 }
 
+function setSessionInfo(){
+    let session = document.getElementById("sessionInfo")
+
+    session.innerHTML = "";
+
+    let gameDay = document.createElement("p");
+    gameDay.innerHTML = `<b>Next Game</b>: ${nextGame.toDateString()}`;
+
+    let gameTime = document.createElement("p");
+    gameTime.innerHTML = `<b>Time</b>: ${nextGame.toLocaleTimeString()} (Pacific)`;
+
+    let level = document.createElement("p");
+    level.innerHTML = `<b>Level</b>: ${characterLevel}`;
+
+    let DM = document.createElement("p");
+    DM.innerHTML = `<b>Dungeon Master</b>: ${dungeonMaster}`;
+
+    let quest = document.createElement("p");
+    quest.innerHTML = `<b>Current Quest</b>: ${currentQuest}`;
+
+    if (!nextGamePlanned){
+        gameDay.innerHTML = `<b>Next Game</b>: Not Planned`;
+        gameTime.innerHTML = `<b>Time</b>: Not Planned`;
+    }
+   
+    session.appendChild(gameDay);
+    session.appendChild(gameTime);
+    session.appendChild(level);
+    session.appendChild(DM);
+    session.appendChild(quest);
+}
+
+const nextGame = new Date(2026, 1, 14, 15, 0) //Feb 14, 3:00pm my time, 2026
+const nextGamePlanned = false;
 const characterLevel = 6;
+const dungeonMaster = "Riley";
+const currentQuest = "With the aid of the night hag bella, seek out the current whereabouts of Eric Conway. Then kill the night hag.";
 
 setUsername();
 
 loadUsername();
 
+setColors(JSON.parse(localStorage.getItem('username')));
+
 displayCharacterCards();
+
+setSessionInfo();
+

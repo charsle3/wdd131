@@ -1,0 +1,43 @@
+@media screen and (min-width:600px) {
+    nav {
+        max-width: 800px;
+    }
+
+    nav label {
+        margin-top: 0;
+    }
+    
+    div {
+        margin: 1rem auto;
+        max-width: 800px;
+    }
+
+    .character-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .character-cards > :first-child {
+        grid-column: span 4;
+        margin: 0 auto;
+    }
+
+    .character-cards div {
+        margin: 1.5rem;
+    }
+
+    #resources {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #summary {
+        grid-row: span 2;
+    }
+
+    #resources div {
+        width: 80%;
+    }
+}
