@@ -165,7 +165,7 @@ form input[type="radio"] {
     margin: .6rem;
 }
 
-footer {
+footer, footer a {
     text-align: center;
     padding: 1rem;
     background-color: var(--secondary-background);
