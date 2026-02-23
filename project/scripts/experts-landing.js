@@ -227,8 +227,8 @@ function setSessionInfo(){
     session.appendChild(quest);
 }
 
-const nextGame = new Date(2026, 1, 14, 15, 0) //Feb 14, 3:00pm my time, 2026
-const nextGamePlanned = false;
+const nextGame = new Date(2026, 1, 25, 20, 0) //Feb 25, 8:00pm my time, 2026
+const nextGamePlanned = true;
 const characterLevel = 6;
 const dungeonMaster = "Riley";
 const currentQuest = "With the aid of the night hag bella, seek out the current whereabouts of Eric Conway. Then kill the night hag.";
