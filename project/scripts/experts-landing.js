@@ -228,10 +228,10 @@ function setSessionInfo(){
 }
 
 const nextGame = new Date(2026, 1, 25, 20, 0) //Feb 25, 8:00pm my time, 2026
-const nextGamePlanned = true;
+const nextGamePlanned = false;
 const characterLevel = 6;
-const dungeonMaster = "Riley";
-const currentQuest = "With the aid of the night hag bella, seek out the current whereabouts of Eric Conway. Then kill the night hag.";
+const dungeonMaster = "James";
+const currentQuest = "Having located the local cultist hideout, purge it with fire.";
 
 setUsername();
 

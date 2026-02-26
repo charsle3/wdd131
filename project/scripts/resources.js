@@ -143,6 +143,10 @@ const sessions = [
         name: "Bobbing for Night Hags",
         description: "Discovering the night hag has been predating on Telemain, the party prepare to investigate Eric's death and lay a trap for the night hag. After realizing she's been duped, the hag bargains with the party to delay their conflict until Eric is located."
     },
+    {
+        name: "Deep Fried Cultists",
+        description: "The party awakens to find that Gericho Rookwood has been abducted in a manner eerily similar to Eric's abduction. As all leads fall flat, the party follows Belle to the cultist hideout, located under a minor chapel on the city outskirts. . . And they toast a few fanatics."
+    }
 ]
 
 function displayDescriptions(){
